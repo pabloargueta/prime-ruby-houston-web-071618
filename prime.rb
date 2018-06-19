@@ -8,7 +8,7 @@ def prime?(integer)
 
 n = 2
 
-while n < integer
+while n < integer ** 0.5
 
   return false if integer % n == 0
  
