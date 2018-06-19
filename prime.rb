@@ -12,7 +12,7 @@ while n < integer
  
  end
  
- return true
+ true
 
   
 end
