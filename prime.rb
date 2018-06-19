@@ -3,7 +3,7 @@
 def prime?(integer)
   
   if integer <= 1 || integer % 2 == 0
-    false
+    return false
   end
  #create a range of numbers from 2 to integer  - 1
   
