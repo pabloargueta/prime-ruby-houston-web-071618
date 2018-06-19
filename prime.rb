@@ -8,7 +8,7 @@ def prime?(integer)
 
 n = 2
 
-while n < integer ** 0.5
+while n < Math.sqrt(integer)
 
   return false if integer % n == 0
  
