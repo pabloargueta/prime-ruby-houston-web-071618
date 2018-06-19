@@ -2,7 +2,7 @@
 
 def prime?(integer)
   
-  if (integer <= 1 || integer % 2 == 0) && integer != 2 #checking for or negative
+  if (integer <= 1 || integer % 2 == 0) && integer != 2 #checking for 1 or negative and modules 2 but not 2
     return false
   end
   
