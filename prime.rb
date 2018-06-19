@@ -6,7 +6,6 @@ def prime?(integer)
     return false
   end
   
-  
   (2..(integer ** 0.5)).each do |num| #optimized to just check up to the square root
     return false if integer % num == 0
   end
