@@ -4,13 +4,11 @@ def prime?(integer)
  
  #create a range of numbers from 2 to integer  - 1
   
-  for i in 2..(integer - 1) do
-    if integer % i == 0
-      return false
-    end
-    
-    true
-    
-  end
+(2..(integer - 1)).each do |num|
+  return false if integer % num == 0
+  
+end
+
+true
   
 end
