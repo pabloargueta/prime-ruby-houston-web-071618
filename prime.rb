@@ -1,6 +1,6 @@
 # Add  code here!
 
-def prime?(integer)
+def prime?(num)
   
   if integer <= 1 || integer % 2 == 0
     return false
