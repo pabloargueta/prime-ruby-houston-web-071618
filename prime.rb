@@ -1,22 +1,24 @@
-# Add  code here!
-
-def prime?(integer)
-  
-  if integer <= 1
+KNOWN_PRIME_NUMBERS = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29]
+def prime?(number)
+  if number <= 1 || number % 2 == 0
     return false
   end
 
-n = 2
+  if KNOWN_PRIME_NUMBERS.include?(number)
+    return true
+  end
 
-while n < Math.sqrt(integer)
+  sqrt = Math.sqrt(number)
 
-  return false if integer % n == 0
- 
- n += 1
- 
- end
- 
- true
+  if sqrt.class == Float
+    last = 3
 
-  
+    while (last <= sqrt.floor) do
+      if(number % last == 0)
+        return false
+      end
+      last += 2
+    end
+  end
+  true
 end
